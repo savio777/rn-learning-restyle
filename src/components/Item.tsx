@@ -18,7 +18,7 @@ const Item: React.FC<ItemProps> = ({ icon, title }) => {
     <Box flexDirection="row" alignItems="center" gap="s">
       <MaterialIcons name={icon} size={24} color={theme.colors.primary700} />
 
-      <Text variant="regular">{title}</Text>
+      <Text>{title}</Text>
     </Box>
   );
 };

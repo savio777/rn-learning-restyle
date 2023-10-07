@@ -1,6 +1,7 @@
 import { createBox, createText } from "@shopify/restyle";
 import { ThemeProps } from "../theme";
 import Item, { ItemProps } from "../components/Item";
+import Button from "../components/Button";
 
 const Box = createBox<ThemeProps>();
 const Text = createText<ThemeProps>();
@@ -31,6 +32,12 @@ const Home = () => (
         {mockItens.map((item) => (
           <Item key={item.title} title={item.title} icon={item.icon} />
         ))}
+      </Box>
+
+      <Box flexDirection="row" mt="xl" gap="m">
+        <Button variant="secondary" title="Simular" />
+
+        <Button variant="primary" title="Contratar" />
       </Box>
     </Box>
   </Box>
